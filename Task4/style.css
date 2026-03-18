@@ -1,0 +1,120 @@
+body {
+  font-family: Nunito, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #e6e9f8;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navitems {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10;
+  align-items: center;
+  gap: 20px;
+}
+
+.navitems li:first-child {
+  margin-right: auto;
+}
+
+.navitems li:last-child {
+  margin-right: 20px;
+}
+h1 {
+  font-size: 40px;
+  color: #008b41;
+  margin: 0;
+}
+
+.head {
+  font-size: 24px;
+  color: #462906;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.submenu li {
+  background-color: #a9a9d8;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.submenu li:hover {
+  background-color: #9bdafc;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+section {
+  display: none;
+}
+
+#vishwas:target,
+#Video2words:target,
+#Education:target,
+#Contact:target {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  .navitems {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  .dropdown {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .submenu li {
+    padding: 8px 10px;
+  }
+}
