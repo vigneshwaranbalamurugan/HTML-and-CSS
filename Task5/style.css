@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    margin: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#popup{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000065;
+    justify-content: center;
+    align-items:center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;}
+
+.popup{
+    background-color: #7fffd4;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin:10px;
+    text-align: center;
+}
+
+#popup:target{
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0s;
+}
+

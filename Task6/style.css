@@ -1,0 +1,44 @@
+body{
+    padding: 10px;
+}
+
+.home,
+.about,
+.contact {
+    display: none;
+}
+
+#homebtn:checked ~ .home{
+    display: block;
+}
+
+#aboutbtn:checked ~ .about{
+    display: block;
+}
+
+#contactbtn:checked ~ .contact{
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 10px 20px;
+    background-color: #010749;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 1s ease,color 1s ease;
+}
+
+label:hover{
+    background-color: #061293;
+}
+
+#homebtn:checked+label,
+#aboutbtn:checked+label,
+#contactbtn:checked+label{
+    background-color: #3f4de9;
+}
